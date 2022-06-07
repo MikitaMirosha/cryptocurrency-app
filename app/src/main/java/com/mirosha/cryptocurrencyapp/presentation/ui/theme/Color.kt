@@ -1,4 +1,4 @@
-package com.mirosha.cryptocurrencyapp.ui.theme
+package com.mirosha.cryptocurrencyapp.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
