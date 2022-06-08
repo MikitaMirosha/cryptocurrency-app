@@ -50,6 +50,8 @@ android {
 
 dependencies {
 
+    def navigation_version = "2.4.2"
+
     def retrofit_version = '2.9.0'
     def okhttp_version = '5.0.0-alpha.2'
 
@@ -59,6 +61,7 @@ dependencies {
     def dagger_version = '2.38.1'
     def hilt_version = '2.38.1'
     def hilt_lifecycle_version = '1.0.0-alpha03'
+    def hilt_navigation_compose_version = '1.0.0'
 
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation "androidx.compose.ui:ui:$compose_version"
@@ -72,6 +75,14 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-compose:$navigation_version"
+
+    // Compose
+    implementation "com.google.accompanist:accompanist-flowlayout:0.17.0"
 
     // Retrofit & OkHttp
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
@@ -95,4 +106,5 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_lifecycle_version"
     kapt "androidx.hilt:hilt-compiler:$hilt_lifecycle_version"
+    implementation "androidx.hilt:hilt-navigation-compose:$hilt_navigation_compose_version"
 }
