@@ -1,8 +1,8 @@
 package com.mirosha.cryptocurrencyapp.domain.use_case.get_coin
 
 import com.mirosha.cryptocurrencyapp.common.Resource
-import com.mirosha.cryptocurrencyapp.common.error_constants.ErrorConstants.CONNECTION_EXCEPTION
-import com.mirosha.cryptocurrencyapp.common.error_constants.ErrorConstants.UNEXPECTED_EXCEPTION
+import com.mirosha.cryptocurrencyapp.common.constants.ErrorConstants.CONNECTION_EXCEPTION
+import com.mirosha.cryptocurrencyapp.common.constants.ErrorConstants.UNEXPECTED_EXCEPTION
 import com.mirosha.cryptocurrencyapp.data.remote.dto.toCoinDetail
 import com.mirosha.cryptocurrencyapp.domain.model.CoinDetail
 import com.mirosha.cryptocurrencyapp.domain.repository.CoinRepository

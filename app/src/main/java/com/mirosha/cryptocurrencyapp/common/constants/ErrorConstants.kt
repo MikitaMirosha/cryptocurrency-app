@@ -1,4 +1,4 @@
-package com.mirosha.cryptocurrencyapp.common.error_constants
+package com.mirosha.cryptocurrencyapp.common.constants
 
 object ErrorConstants {
     const val UNEXPECTED_EXCEPTION = "An unexpected exception occurred."
